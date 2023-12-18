@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/styles.css" />
+    <script src="../javascript/index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <title>EduCaNet Homepage</title>
+</head>
+
+
+<body>
+
+
+    <!--===============================  Navbar ================================================================== -->
+    <div class="navbar">
+        <div class="logo">
+            <!-- <img src="../assets/images/Educanet Logo.png" alt="EduCaNet Logo" /> -->
+        <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact Us</a></li>
+            <li><a href="#download-section">Download</a></li>
+        </ul>
+    </div>
+    </div>  
+
+
+
+     <!------========================== Home Section ==============================--------------------------------->
+
+     <div class="home-section" id="home-section"> <!-- Added id for the home section -->
+        <img class="home-image" src="../assets/images/Educanet Logo.png" alt="Home Image"> <!-- Replace with your actual image path -->
+        <div class="home-text">
+            <h1>Welcome to EduCaNet</h1>
+            <br>
+            <p> a Learning Management System (LMS) specifically for Special Education (SPED) schools to facilitate access to informative resources and allow monitoring of student progress.</p>
+            <div class="home-buttons">
+                <button class="home-button" onclick="navigateToAbout()">About</button>
+               
+        </div>
+        </div>
+    </div>
+
+        
+
+    <!--================================ About Section =============================================================-->
+
+    <div id="about-section">
+    <h2>About EduCaNet</h2>
+    <br>
+    <p>The program, extensively tested by SPED teachers and parents in Davao City, Philippines, caters specifically to children with special needs. It offers customized educational materials and resources, accessible even in remote areas with internet connectivity. Notably, it includes a feature for tracking and monitoring student progress, ensuring personalized and effective learning for every child, regardless of location.</p>
+    <br>
+    
+    <div id="carousel">
+        <img class="carousel-image" src="../assets/images/Educanet Logo.png" alt="Image 1">
+        <img class="carousel-image" src="../assets/images/tester2.jpg" alt="Image 2">
+        <img class="carousel-image" src="../assets/images/tester3.jpg" alt="Image 3">
+        <img class="carousel-image" src="../assets/images/tester4.jpg" alt="Image 4">
+        <img class="carousel-image" src="../assets/images/tester1.jpg" alt="Image 5">
+        <!-- Add more images as needed -->
+    </div>
+
+</div>
+
+    <!--================================ Contact Us Section =============================================================-->
+
+    <div id="contact-section">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="senderName">Your Name:</label><br>
+            <input type="text" id="senderName" name="senderName" required><br>
+            
+            <label for="senderEmail">Your Email:</label><br>
+            <input type="email" id="senderEmail" name="senderEmail" required><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <!--================================ Download Section =============================================================-->
+
+   <!-- Download Section -->
+   <div id="download-section">
+    <h2>Download EduCaNet</h2>
+    <br>
+    
+    <div class="download-container">
+        <div class="download-app">
+            <i class="app-icon">🏫</i> <!-- Replace with your icon -->
+            <h3>School Admin</h3>
+            <p>Manage your institution efficiently.</p>
+            <a href="https://www.dropbox.com/scl/fi/pti2a8ya2c5w3r7aad7pa/school-admin-v3.zip?rlkey=8laq8fkatlizk7u550f9rzbh1&dl=0" class="download-button" download target="_blank">School Admin</a>
+        </div>
+
+        <div class="download-app">
+            <i class="app-icon">👩‍🏫</i> <!-- Replace with your icon -->
+            <h3>Teachers</h3>
+            <p>Interactive tools for educators.</p>
+            <a href="https://www.dropbox.com/scl/fi/wmt2z7nbbe18yi58vax2n/teacher-final-build.zip?rlkey=sgcdpvt9eu4ri4f25v0sijmd4&dl=0" class="download-button" download target="_blank">Teachers</a>
+        </div>
+
+        <div class="download-app">
+            <i class="app-icon">🎓</i> <!-- Replace with your icon -->
+            <h3>Student</h3>
+            <p>Learning made easy and fun.</p>
+            <a href="https://www.dropbox.com/scl/fi/uca4d502ka2ezfp295sh4/student-final-build.zip?rlkey=aua4awb0to6hpr32rm5h6npni&dl=0" class="download-button" download target="_blank >Student</a>
+        </div>
+    </div>
+</div>
+
+    <!--================================ Footer =============================================================-->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+               
+                <p>
+                   EduCaNet 2023
+                </p>
+              
+
+
+    
+</body>
+</html>

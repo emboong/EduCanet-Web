@@ -1,0 +1,248 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ======================================================================Style the navigation bar======================================================== */
+.navbar {
+    overflow: hidden;
+    background-color: white; /* Change background color to white */
+    position: sticky;
+    top: 0; /* Keep the navbar at the very top of the viewport */
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for elevation effect */
+}
+
+
+
+/* Style the navigation bar links */
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+    font-family: arial, helvetica, quicksand, sans-serif;
+    
+}
+
+.navbar ul li {
+    display: inline; /* Display list items in a row */
+    font-weight: bold;
+    font-size: larger;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Change the color of links on hover */
+.navbar ul li a:hover {
+    background-color: #b2dcff;
+    color: black;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 600px) {
+    .navbar ul li {
+        display: block; /* Stack list items under each other */
+    }
+}
+
+/* ======================================================================Style the home section======================================================== */
+
+.home-section {
+    margin: 0; /* Reset margin to ensure full screen coverage */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 30px;
+    font-family: arial, helvetica, quicksand, sans-serif;
+    height: 100vh; /* Make the section's height 100% of the viewport height */
+    width: 100vw; /* Make the section's width 100% of the viewport width */
+}
+
+
+/* Style the image in the home section */
+.home-image {
+    max-width: 30%; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the text */
+}
+
+/* Style the text in the home section */
+.home-text {
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.home-button {
+    background-color: #5ec4ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 2px; /* Adjusted margin for spacing */
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: arial, helvetica, quicksand, sans-serif;
+}
+.home-button:hover {
+    background-color: #b2dcff;
+    color: black;
+}
+
+/* ======================================================================Style the about section======================================================== */
+
+#about-section {
+    text-align: center;
+    margin: 0; /* Reset margin to ensure full screen coverage */
+    padding: 30px;
+    font-family: arial, helvetica, quicksand, sans-serif;
+    font-size: larger;
+    height: 100vh; /* Make the section's height 100% of the viewport height */
+    width: 100vw; /* Make the section's width 100% of the viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+
+#carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+}
+
+.carousel-image {
+    flex: auto;
+    max-width: 50%; /* Adjust the size as needed */
+    margin: 10px;
+    scroll-snap-align: start;
+    -webkit-scroll-snap-align: start;
+}
+
+#carousel-text {
+    margin-top: 20px; /* Space above the text */
+}
+
+/* ======================================================================Style the contact section======================================================== */
+#contact-section {
+    text-align: center;
+    padding: 30px;
+    font-family: arial, helvetica, quicksand, sans-serif;
+    height: 100vh; /* Make the section's height 100% of the viewport height */
+    width: 100vw; /* Make the section's width 100% of the viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 0; /* Reset any default margin */
+}
+
+
+#contact-section form {
+    margin: auto;
+    width: 80%; /* Adjust width as needed */
+}
+
+#contact-section input[type="text"], 
+#contact-section input[type="email"], 
+#contact-section textarea {
+    width: 100%; /* Full width */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#contact-section input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#contact-section input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+#contact-section textarea {
+    height: 200px;
+}
+
+/* ====================================================================== Download Section======================================================== */
+#download-section {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: arial, helvetica, quicksand, sans-serif;
+    font-size: larger;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.download-app {
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+.app-icon {
+    font-size: 48px;
+}
+
+.download-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+/* ====================================================================== Footer======================================================== */
+
+.footer {
+    background-color: #5ec4ff;
+    padding: 10px;
+    text-align: center;
+    font-family: arial, helvetica, quicksand, sans-serif;
+    font-size: smaller;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
